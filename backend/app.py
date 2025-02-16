@@ -20,7 +20,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 MODEL_PATH = "brain_tumor_model.pth"
 
 # Download model if not present
-MODEL_URL = "https://github.com/YOUR_USERNAME/brain-tumor-backend/raw/main/brain_tumor_model.pth"
+MODEL_URL = "https://github.com/karthikrayaprolu/Brain-Tumor-Detection/blob/main/backend/brain_tumor_model.pth"
 
 if not os.path.exists(MODEL_PATH):
     print("Downloading model...")
