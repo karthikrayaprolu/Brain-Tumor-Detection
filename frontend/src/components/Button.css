@@ -1,0 +1,29 @@
+/* Button.css */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #004085;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    border: 2px solid #aaa;
+    cursor: not-allowed;
+  }
+  
