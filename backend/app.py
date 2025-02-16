@@ -6,10 +6,12 @@ from PIL import Image
 from flask_cors import CORS
 import requests
 
+
 app = Flask(__name__)
 
-# Enable CORS for your frontend domain (replace with your actual frontend URL)
-CORS(app, resources={r"/*": {"origins": "https://brain-tumor-detection-8x84.onrender.com"}})
+# Enable CORS for all domains
+CORS(app)
+
 
 # Device configuration (use GPU if available)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
