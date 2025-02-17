@@ -10,7 +10,7 @@ function Home() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [prediction, setPrediction] = useState(null); // Store the prediction object
   const [loading, setLoading] = useState(false);
-
+  
   // Disease information including symptoms
   const diseaseInfo = {
     Glioma: {
@@ -84,7 +84,10 @@ function Home() {
     } finally {
       setLoading(false); // Stop loading
     }
+
+    
   };
+  
 
   return (
     <div className="home">
